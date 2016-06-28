@@ -1,0 +1,926 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+G-Sim
+</name>
+</assembly>
+<members>
+<member name="T:G_Sim.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Earth">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Huge_Spiral">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Jupiter">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Mars">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Mercury">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Moon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Neptune">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Orbit_1">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Orbit_2">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Orbit_3">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Orbit_4">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Orbit_5">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Planet_and_Moon">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Planet_and_Moon_with_Moon">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Pluto">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Solar_System">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Sun">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Uranus">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:G_Sim.My.Resources.Resources.Venus">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="F:G_Sim.Changes.ChangeList">
+ <summary>
+ The list which holds the changes as the type Change (below)
+ </summary>
+</member>
+<member name="F:G_Sim.Changes.CurrentIndex">
+ <summary>
+ Holds the index of the currently selected / current state of the BodyDatas
+ </summary>
+</member>
+<member name="E:G_Sim.Changes.ListChanged">
+ <summary>
+ The event which is called upon the list being changed
+ </summary>
+</member>
+<member name="F:G_Sim.Changes.MaxStoredChanges">
+ <summary>
+ The constant which holds the max number of changes which should be stored
+ </summary>
+</member>
+<member name="F:G_Sim.Changes.AutoStoreWhileRunningIntervalMilliseconds">
+ <summary>
+ The constant which is used by the main form to decide how often the BodyDatas should automatically be stored while running.
+ </summary>
+</member>
+<member name="F:G_Sim.Changes.AutoStoreWhileRunningIntervalSeconds">
+ <summary>
+ Used locally to update the list box when adding ChangeType.SimulationRunTime
+ </summary>
+</member>
+<member name="F:G_Sim.Trails.ScenePoints">
+ <summary>
+ The array which holds the scene points for each body's trail
+ </summary>
+</member>
+<member name="F:G_Sim.Trails.MaxBodyPointsStartValue">
+ <summary>
+ Holds the value which the MaxBodyPoints variable holds to begin with.
+ </summary>
+</member>
+<member name="F:G_Sim.Trails.MaxBodyPoints">
+ <summary>
+ Holds the value which is the max number of points stored for each body.
+ </summary>
+</member>
+<member name="M:G_Sim.Trails.UpdateTrails">
+ <summary>
+ Refreshes the values stored in the array
+ </summary>
+</member>
+<member name="M:G_Sim.Trails.RemoveExcessPoints(System.Int32)">
+ <summary>
+ Removes the oldest points in the specified index
+ </summary>
+</member>
+<member name="M:G_Sim.Trails.AddBodyTrail">
+ <summary>
+ Declares a new body on the end of the point list
+ </summary>
+</member>
+<member name="M:G_Sim.Trails.RemoveBodyTrail(System.UInt16)">
+ <summary>
+ Removes trail at specified index
+ </summary>
+</member>
+<member name="M:G_Sim.Trails.RemoveAllTrails">
+ <summary>
+ Removes all the stored body trails in the array
+ </summary>
+</member>
+<member name="M:G_Sim.Trails.RenderTrails">
+ <summary>
+ Renders the curves from the points stored in this class to the buffer passed as a parameter
+ </summary>
+</member>
+<member name="M:G_Sim.Trails.ClearTrail(System.Int32)">
+ <summary>
+ Clears the trail of the body at the specified index
+ </summary>
+ <param name="i">Index to clear</param>
+</member>
+<member name="M:G_Sim.Trails.ClearAllTrails">
+ <summary>
+ Clears all trails
+ </summary>
+</member>
+<member name="M:G_Sim.Body.#ctor">
+ <summary>
+ Generates an empty body with default / empty values
+ </summary>
+</member>
+<member name="P:G_Sim.Body.Velocity(System.Boolean)">
+ <summary>
+ Gets and sets the velocity of the body (max is 10 ^ 8)
+ </summary>
+</member>
+<member name="P:G_Sim.Body.Acceleration">
+ <summary>
+ Gets and sets the acceleration of the body
+ </summary>
+</member>
+<member name="P:G_Sim.Body.Center(System.Boolean)">
+ <summary>
+ Gets and sets the center of the body (the primary position property) (max is 10 ^ 35, exception is thrown upon setting a value greater than this which can be tested for)
+ </summary>
+</member>
+<member name="P:G_Sim.Body.Size">
+ <summary>
+ Gets or sets the height / width of the body on the scene
+ </summary>
+</member>
+<member name="P:G_Sim.Body.Mass(System.Boolean)">
+ <summary>
+ Gets and sets the mass of the body (max is 10 ^ 35) [sets the size of the body upon setting]
+ </summary>
+</member>
+<member name="P:G_Sim.Body.Colour">
+ <summary>
+ Gets and sets the colour of the body
+ </summary>
+</member>
+<member name="P:G_Sim.Body.IsUsingBitmap">
+ <summary>
+ States whether the body is currently using a bitmap (its image) to be rendered
+ </summary>
+</member>
+<member name="P:G_Sim.Body.Image">
+ <summary>
+ Gets and sets the bitmap (image) of the body and generates DominantImageColour from the specified image
+ </summary>
+</member>
+<member name="P:G_Sim.Body.TopLeft">
+ <summary>
+ Gets the PointF of the top left of the body
+ </summary>
+</member>
+<member name="P:G_Sim.Body.Radius">
+ <summary>
+ Gets the radius (half of the size)
+ </summary>
+</member>
+<member name="M:G_Sim.Body.UpdateDominantImageColour">
+ <summary>
+ Used within the body class to set DominantImageColour
+ </summary>
+</member>
+<member name="M:G_Sim.Body.GetSizeFromMass(System.Single)">
+ <summary>
+ Gets the height/width of a body with the specified mass given the density
+ </summary>
+</member>
+<member name="M:G_Sim.Body.GetMassFromSize(System.Single)">
+ <summary>
+ Gets the mass of a body given its size and density
+ </summary>
+</member>
+<member name="M:G_Sim.Body.GetDominantImageColour">
+ <summary>
+ Gets the colour which is mathematically average in the set image
+ </summary>
+</member>
+<member name="M:G_Sim.Body.GetDominantImageColourFromBitmap(System.Drawing.Bitmap)">
+ <summary>
+ Used within the body class to calculate the dominant colour in the specified bitmap
+ </summary>
+</member>
+<member name="M:G_Sim.Body.Intersecting(G_Sim.Body)">
+ <summary>
+ Calculates whether this body is currently intersecting the specified body
+ </summary>
+</member>
+<member name="M:G_Sim.Body.VisibleInView">
+ <summary>
+ Calculates whether the body is visible in the viewport
+ </summary>
+</member>
+<member name="M:G_Sim.Body.RenderRectangle">
+ <summary>
+ Returns the rectangle which will be used to render the body.
+ </summary>
+</member>
+<member name="M:G_Sim.Vector.VectorBetween(System.Drawing.PointF,System.Drawing.PointF)">
+ <summary>
+ Calculates a vector from A to B (return a positive j when moving upwards)
+ </summary>
+</member>
+<member name="M:G_Sim.Vector.UnitVector">
+ <summary>
+ Returns a vector with each of the inputted components divided by the magnitude of inputted vector
+ </summary>
+</member>
+<member name="M:G_Sim.Vector.MagnitudeSquared">
+ <summary>
+ Returns the squared magnitude or length of the vector (uses Pythagoras)
+ </summary>
+</member>
+<member name="M:G_Sim.Vector.Magnitude">
+ <summary>
+ Returns the magnitude or length of the vector (uses Pythagoras)
+ </summary>
+</member>
+<member name="F:G_Sim.MainForm._SelectedBodyRefreshTimer">
+ <summary>
+ The timer which updates the current body data
+ </summary>
+</member>
+<member name="F:G_Sim.MainForm._CheckCursorLeaveViewTimer">
+ <summary>
+ The timer which checks whether the cursor is still over the view (used for the orbital ring and mouse label visibility)
+ </summary>
+</member>
+<member name="F:G_Sim.MainForm._ZoomInTimer">
+ <summary>
+ The timer upon each tick, ZoomScale is increased and the view is zoomed in
+ </summary>
+</member>
+<member name="F:G_Sim.MainForm._ZoomOutTimer">
+ <summary>
+ The timer upon each tick, ZoomScale is decreased and the view is zoomed out
+ </summary>
+</member>
+<member name="F:G_Sim.MainForm._TimescaleTimer">
+ <summary>
+ The timer upon each tick, checks whether the user is sliding the time factor tracker and so to update TimeFactor accordingly
+ </summary>
+</member>
+<member name="F:G_Sim.MainForm._AutoStoreSimulationChangesTimer">
+ <summary>
+ The timer upon each tick, if the simulation is running, stores a change using Changes
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.LoadApplication(System.Object,System.EventArgs)">
+ <summary>
+ Performs the correct tasks in order to begin the application
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.MainForm_Shown(System.Object,System.EventArgs)">
+ <summary>
+ Paints a blank view (otherwise the view starts up grey) and then checks for updates
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.MainForm_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ Stops the graphics loop as the form is closing
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.UpdateUI">
+ <summary>
+ Disables/enables controls when body array is (not) empty then repaints
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.SetImageSelectedBody(System.Object,System.EventArgs)">
+ <summary>
+ Allows the user to add/change/remove the image from the selected body
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.RefreshCurrentBodyInfo">
+ <summary>
+ Updates the selected body information on the UI
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.ShowVelocity_CheckedChanged(System.Object,System.EventArgs)">
+ <summary>
+ Updates the ShowVelocity global and repaints
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.ShowTrails_CheckedChanged(System.Object,System.EventArgs)">
+ <summary>
+ Updates the ShowTrails global and repaints
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.ClearAllTrails(System.Object,System.EventArgs)">
+ <summary>
+ Clears all trails in the scene
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.btnViewZoomIn_Click(System.Object,System.EventArgs)">
+ <summary>
+ Starts ZoomInTimer
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.ZoomInTick">
+ <summary>
+ Calls MouseInput's ZoomInOut method to increase the ZoomScale global (zoom in)
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.btnViewZoomIn_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Stops ZoomInTimer
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.btnViewZoomOut_MouseDown(System.Object,System.EventArgs)">
+ <summary>
+ Starts ZoomOutTimer
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.ZoomOutTick">
+ <summary>
+ Calls MouseInput's ZoomInOut method to decrease the ZoomScale global (zoom out)
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.btnViewZoomOut_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Stops ZoomOutTimer
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.EnableGravitation_CheckedChanged(System.Object,System.EventArgs)">
+ <summary>
+ Updates the GravitationEnabled and repaints
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.trackerTimescale_MouseDown">
+ <summary>
+ Starts the TimeFactorTimer
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.trackerTimescale_MouseUp">
+ <summary>
+ Stops the TimescaleTimer and resets the slider back to the center
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.TimescaleTimer_Tick">
+ <summary>
+ Updates Timescale with respect to the displacement of the slider
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.ChangeListHasChanged">
+ <summary>
+ Updates the changes listbox (called by Changes)
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.Changes_SelectedIndexChanged">
+ <summary>
+ Changes BodyDatas so that it mirrors the selected change in the changes listbox
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.AutoStoreSimulationWhileRunning">
+ <summary>
+ Stores a change in Changes with the ChangeType of SimulationRunTime
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.TogglePlayPause(System.Object,System.EventArgs)">
+ <summary>
+ Starts or stops the loop depending on current state
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.GameLoopStateChanged">
+ <summary>
+ Changes the text of the PlayPause button (called by the GameLoop) and changes the state of the auto-store timer
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.ClearScene(System.Object,System.EventArgs)">
+ <summary>
+ Removes all bodies from BodyData, removes all trails and then updates the UI
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.LoadScene(System.Object,System.EventArgs)">
+ <summary>
+ Loads a .gsim file and refreshes applications to show file contents
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.SaveScene(System.Object,System.EventArgs)">
+ <summary>
+ Guides the user through saving the current state of the application into a .gsim file
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.Quit(System.Object,System.EventArgs)">
+ <summary>
+ Quits the application
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.SetSelectedCursorFunction">
+ <summary>
+ Retrieves the name of the cursor type radio which is selected
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.View_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Performs the correct method for a MouseDown event inside the viewport using the MouseInput module
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.View_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Performs the correct method for a MouseMove event inside the viewport using the MouseInput module
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.View_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Performs the correct method for a MouseUp event inside the viewport using the MouseInput module
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.CheckCursorStillInView">
+ <summary>
+ Checks if the cursor is still over the viewport and if not then stop painting the orbital ring and the mouse label (used for Add Orbital)
+ </summary>
+</member>
+<member name="M:G_Sim.MainForm.View_MouseWheel(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Uses MouseInput to manage changes to the zoom in the form of the mouse wheel
+ </summary>
+</member>
+<member name="F:G_Sim.BodyMethods.BodyDatas">
+ <summary>
+ The array in which all the bodies in the scene are stored
+ </summary>
+</member>
+<member name="F:G_Sim.BodyMethods.SelectedBodyIndex">
+ <summary>
+ Holds the index of the currently selected body
+ </summary>
+</member>
+<member name="M:G_Sim.BodyMethods.BodyArrayEmpty">
+ <summary>
+ Returns whether the body array has no bodies in it
+ </summary>
+</member>
+<member name="M:G_Sim.BodyMethods.AddBody(G_Sim.Body)">
+ <summary>
+ Adds the passed body to the BodyDatas array, resizes the body array when appropriate and creates space for a trail for the new body
+ </summary>
+</member>
+<member name="M:G_Sim.BodyMethods.RemoveBody(System.UInt32)">
+ <summary>
+ Removes the body and removes the trail at the given index
+ </summary>
+</member>
+<member name="M:G_Sim.FileHandling.GetCSVLine(G_Sim.Body)">
+ <summary>
+ Returns the CSV line corresponding to the inputted body.
+ </summary>
+</member>
+<member name="M:G_Sim.FileHandling.CSVToBody(System.String)">
+ <summary>
+ Converts a CSV line and gives out a body.
+ </summary>
+</member>
+<member name="M:G_Sim.FileHandling.ImageToBase64(System.Drawing.Image)">
+ <summary>
+ Taks in an image and returns the corresponding base64 code.
+ </summary>
+</member>
+<member name="M:G_Sim.FileHandling.Base64ToImage(System.String)">
+ <summary>
+ Takes in base64 code and converts it to an image.
+ </summary>
+</member>
+<member name="M:G_Sim.FileHandling.SaveCSVFile">
+ <summary>
+ Guides the user through saving the scene file.
+ </summary>
+</member>
+<member name="M:G_Sim.FileHandling.LoadCSVFile">
+ <summary>
+ Guides the user through saving the scene file.
+ </summary>
+ <return>If a scene file has been loaded then returns True, else returns False.</return>
+</member>
+<member name="M:G_Sim.FileHandling.SetupResources">
+ <summary>
+ Copies all of the images and example scene files into the application data.
+ </summary>
+</member>
+<member name="M:G_Sim.FileHandling.ProcessSelectImage(System.Boolean)">
+ <summary>
+ Guides the user through setting the image of the selected body.
+ </summary>
+ <param name="SelfCalled">Used when the image is removed to maintain the stored state of the gameloop when recalled.</param>
+</member>
+<member name="M:G_Sim.UpdatesAndErrors.MyApplication_UnhandledException(System.Object,Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs)">
+ <summary>
+ The handler method for an unhandled exception. Sends info about the exception in an email to my email address.
+ </summary>
+</member>
+<member name="M:G_Sim.UpdatesAndErrors.CheckVersion">
+ <summary>
+ Checks if the downloaded application is the newest available. If not then prompts the user to download the new version.
+ </summary>
+</member>
+<member name="F:G_Sim.GraphicsMethods.g">
+ <summary>
+ The main buffer which everything is painted to before being rendered to the graphics target.
+ </summary>
+</member>
+<member name="M:G_Sim.GraphicsMethods.ClearBuffer">
+ <summary>
+ Clears the buffer and paints it white.
+ </summary>
+</member>
+<member name="M:G_Sim.GraphicsMethods.RenderBuffer">
+ <summary>
+ Renders the buffer to the default graphics object (the render panel).
+ </summary>
+</member>
+<member name="M:G_Sim.GraphicsMethods.BufferEmpty">
+ <summary>
+ Returns whether the BufferedGraphics has an object assigned to it.
+ </summary>
+</member>
+<member name="F:G_Sim.MouseMethods.MouseIsDown">
+ <summary>
+ Holds a boolean value which states whether the mouse is down. Also used to bypass finalising operations when errors occur.
+ </summary>
+</member>
+<member name="F:G_Sim.MouseMethods.PreviousRenderMousePosition">
+ <summary>
+ Used in Pan to calculate how much the mouse has moved and so how much to pan the view.
+ </summary>
+</member>
+<member name="F:G_Sim.MouseMethods.ScenePointOnBody">
+ <summary>
+ Used in Move Body so that the cursor is always on the same point on the body.
+ </summary>
+</member>
+<member name="F:G_Sim.MouseMethods.RenderMouse">
+ <summary>
+ Holds the point on the view of the cursor position.
+ </summary>
+</member>
+<member name="F:G_Sim.MouseMethods.SelectedRadio">
+ <summary>
+ Holds the value of the currently selected cursor function radio button on main form.
+ </summary>
+</member>
+<member name="T:G_Sim.MouseMethods.CursorSubDelegate">
+ <summary>
+ The delegate for all mouse subs in MouseMethods
+ </summary>
+</member>
+<member name="T:G_Sim.MouseMethods.EventType">
+ <summary>
+ Enumeration which holds the different types of mouse events (Up, Move, Down)
+ </summary>
+</member>
+<member name="T:G_Sim.MouseMethods.MouseFunction">
+ <summary>
+ Holds values which correspond to the cursor functions on the main form.
+ </summary>
+</member>
+<member name="M:G_Sim.MouseMethods.SelectBodyFromPoint(System.Drawing.Point,System.Boolean)">
+ <summary>
+ Calculates which body should be selected given the render point of the mouse.
+ </summary>
+ <param name="RenderMouse">The render point of the mouse</param>
+ <param name="AcceptClosestBody">Defines whether the sub should allow selection of a body which is closest to the specified point</param>
+ <returns>If the method changes the SelectedBodyIndex then return True, else returns False.</returns>
+</member>
+<member name="M:G_Sim.MouseMethods.UpdateGravitatingBody">
+ <summary>
+ Updates the Orbiting Body index and changes the mouse label
+ </summary>
+</member>
+<member name="M:G_Sim.MouseMethods.RunCursorSub(G_Sim.MouseMethods.EventType,System.Drawing.Point)">
+ <summary>
+ Runs the neccessary cursor sub by referencing the SelectedRadio global
+ </summary>
+ <param name="e">The type of mouse event (MouseDown, MouseMove or MouseUp)</param>
+ <param name="RenderMouse">The render point of the cursor</param>
+</member>
+<member name="M:G_Sim.MouseMethods.ZoomInOut(System.Int32,System.Drawing.Point)">
+ <summary>
+ Zooms the view in or out about the mouse pointer depending on the passed Delta parameter
+ </summary>
+</member>
+<member name="M:G_Sim.MouseMethods.CursorPan(G_Sim.MouseMethods.EventType)">
+ <summary>
+ Moves the viewport around
+ </summary>
+</member>
+<member name="M:G_Sim.MouseMethods.CursorAddBody(G_Sim.MouseMethods.EventType)">
+ <summary>
+ Adds a body to the array whos center is the origional mouse position and whos size is however far the user has dragged the mouse
+ </summary>
+</member>
+<member name="M:G_Sim.MouseMethods.CursorAddOrbitalBody(G_Sim.MouseMethods.EventType)">
+ <summary>
+ Adds a body which is is created at the point of the users mouse. The user then drags to define the mass.
+ Calculates which the orbiting body should be by finding which planet has the greatest force on the mouse point.
+ </summary>
+</member>
+<member name="M:G_Sim.MouseMethods.CursorMoveBody(G_Sim.MouseMethods.EventType)">
+ <summary>
+ Selects a body if the mouse point is over it and the moves it around
+ </summary>
+</member>
+<member name="M:G_Sim.MouseMethods.CursorSelectBody(G_Sim.MouseMethods.EventType)">
+ <summary>
+ Changes the SelectedBodyIndex when the user clicks a body
+ </summary>
+</member>
+<member name="M:G_Sim.MouseMethods.CursorChangeVelocity(G_Sim.MouseMethods.EventType)">
+ <summary>
+ Allows the user to drag from inside a body to set the endpoint of its velocity
+ </summary>
+</member>
+<member name="M:G_Sim.MouseMethods.CursorChangeMass(G_Sim.MouseMethods.EventType)">
+ <summary>
+ Allows the user to drag from inside a body to change the size (and mass) of the body
+ </summary>
+</member>
+<member name="M:G_Sim.MouseMethods.CursorRemoveBody(G_Sim.MouseMethods.EventType)">
+ <summary>
+ Removes a body when the user clicks on it
+ </summary>
+</member>
+<member name="M:G_Sim.OtherMethods.GetTimeString(System.Double,System.Int32)">
+ <summary>
+ Returns the specified number of seconds as a string in terms of secs/mins/hrs/days/years rounded to the given number of decimal places
+ </summary>
+</member>
+<member name="M:G_Sim.OtherMethods.ForceMaxBounds(System.Double@,System.Double,System.Boolean)">
+ <summary>
+ Ensures that a variable is less than the specified max (Double)
+ </summary>
+ <param name="value">The value to check and change if neccessary</param>
+ <param name="Maximum">The maximum value which value can have</param>
+ <param name="CheckNegative">States whether the value will ever be negative and so to check if the value is greater than the negative of the specified max</param>
+ <returns>If the value is changed returns False, if it is left then returns True</returns>
+</member>
+<member name="M:G_Sim.OtherMethods.ForceMaxBounds(System.Single@,System.Single,System.Boolean)">
+ <summary>
+ Ensures that a variable is less than the specified max (Single)
+ </summary>
+ <param name="value">The value to check and change if neccessary</param>
+ <param name="Maximum">The maximum value which value can have</param>
+ <param name="CheckNegative">States whether the value will ever be negative and so to check if the value is greater than the negative of the specified max</param>
+ <returns>If the value is changed returns False, if it is left then returns True</returns>
+</member>
+<member name="M:G_Sim.OtherMethods.ForceMinBound(System.Double@,System.Double)">
+ <summary>
+ Ensures that a value is greater than the specified minimum (positive only)
+ </summary>
+ <param name="value">The value to check and change if neccessary</param>
+ <param name="Minimum">The lowest value which value can have</param>
+ <returns>If the value is changed returns False, if it is left then returns True</returns>
+</member>
+<member name="M:G_Sim.OtherMethods.GetRandomColour">
+ <summary>
+ Generates an entirely random colour
+ </summary>
+</member>
+<member name="M:G_Sim.OtherMethods.RandomNumber(System.Single,System.Single)">
+ <summary>
+ Generates a random number 
+ </summary>
+ <param name="lowerBound"></param>
+ <param name="upperBound"></param>
+ <returns></returns>
+</member>
+<member name="F:G_Sim.PaintingMethods.PaintOrbital">
+ <summary>
+ States whether paint should render an orbital ring
+ </summary>
+</member>
+<member name="F:G_Sim.PaintingMethods.OrbitingBodyIndex">
+ <summary>
+ Holds the index of the body which the user wishes to create an orbital around
+ </summary>
+</member>
+<member name="F:G_Sim.PaintingMethods.ShowMouseLabel">
+ <summary>
+ States whether paint should display a label next to the cursor with a text of value MouseLabel
+ </summary>
+</member>
+<member name="F:G_Sim.PaintingMethods.MouseLabelText">
+ <summary>
+ The string to be rendered inside the label next to the cursor
+ </summary>
+</member>
+<member name="M:G_Sim.PaintingMethods.Paint">
+ <summary>
+ The sub in which all graphics are rendered and then painted to the view
+ </summary>
+</member>
+<member name="P:G_Sim.SceneMethods.ZoomScale">
+ <summary>
+ Gets and sets the current value for the zoom of the view (min is 10 ^ -8, max is 10 ^ -3) (default is 10 ^ -5)
+ </summary>
+</member>
+<member name="M:G_Sim.SceneMethods.GetZoomScalePercentage">
+ <summary>
+ Gets the ZoomScale as a percentage of its initial value
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:G_Sim.SceneMethods.ViewPosition">
+ <summary>
+ Gets and sets the position of the viewport on the scene (max is 10 ^ 35)
+ </summary>
+</member>
+<member name="F:G_Sim.SceneMethods.RenderBoxSize">
+ <summary>
+ The current size of the viewport
+ </summary>
+</member>
+<member name="F:G_Sim.SceneMethods._Timescale">
+ <summary>
+ Gets and sets the time scale in terms of seconds (default is 3600 seconds / 1 hour)
+ </summary>
+</member>
+<member name="F:G_Sim.SceneMethods.BigG">
+ <summary>
+ The value of the universal gravitational constant used in the simulation
+ </summary>
+</member>
+<member name="F:G_Sim.SceneMethods._ShowVelocity">
+ <summary>
+ A UI variable. States whether the velocity line should be rendered
+ </summary>
+</member>
+<member name="F:G_Sim.SceneMethods.ShowTrails">
+ <summary>
+ A UI variable. States whether the trails should be rendered
+ </summary>
+</member>
+<member name="F:G_Sim.SceneMethods.GravitationEnabled">
+ <summary>
+ A UI variable. States whether the simulation should involve gravitation in the interactions
+ </summary>
+</member>
+<member name="M:G_Sim.SceneMethods.ScenePointToRenderPoint(System.Drawing.PointF)">
+ <summary>
+ Calculates the render point which will represent the given scene point
+ </summary>
+</member>
+<member name="M:G_Sim.SceneMethods.RenderPointToScenePoint(System.Drawing.PointF)">
+ <summary>
+ Calculates the point on the scene which is represented by the given render point
+ </summary>
+</member>
+<member name="M:G_Sim.SceneMethods.SceneDistanceToRenderDistance(System.Single)">
+ <summary>
+ Calculates the render distance of the given scene distance
+ </summary>
+</member>
+<member name="M:G_Sim.SceneMethods.RenderDistanceToSceneDistance(System.Int32)">
+ <summary>
+ Calculates the scene distance of the given render distance
+ </summary>
+</member>
+<member name="M:G_Sim.SceneMethods.DistanceBetween(System.Drawing.PointF,System.Drawing.PointF)">
+ <summary>
+ Calculates the distance between the two specified points
+ </summary>
+</member>
+<member name="M:G_Sim.SceneMethods.GetMostForcefulBody(System.Drawing.PointF)">
+ <summary>
+ Calculates and returns the index of the body which has the greatest gravitational force on the specified scene point
+ </summary>
+</member>
+<member name="M:G_Sim.SceneMethods.InsideRectangle(System.Drawing.PointF,System.Drawing.RectangleF)">
+ <summary>
+ Finds whether the specified point is inside the given rectangle
+ </summary>
+</member>
+<member name="M:G_Sim.SceneMethods.GetViewportSceneRectangle">
+ <summary>
+ Returns the viewport as a rectangle on the scene
+ </summary>
+</member>
+<member name="F:G_Sim.UpdatingMethods.MovingBody">
+ <summary>
+ States whether the user is currently moving the selected body
+ </summary>
+</member>
+<member name="M:G_Sim.UpdatingMethods.Update(System.Single)">
+ <summary>
+ The sub in which all logic and calculations are performed
+ </summary>
+</member>
+<member name="M:G_Sim.UpdatingMethods.ResetAccelerations">
+ <summary>
+ Zeros all bodies' accelerations
+ </summary>
+</member>
+<member name="M:G_Sim.UpdatingMethods.UpdateAccelerations">
+ <summary>
+ Calculates the net acceleration for all bodies
+ </summary>
+</member>
+<member name="M:G_Sim.UpdatingMethods.UpdateVelocitiesFromAccelerations(System.Single)">
+ <summary>
+ Changes the velocities due to the accelerations
+ </summary>
+</member>
+<member name="M:G_Sim.UpdatingMethods.UpdatePositions(System.Single)">
+ <summary>
+ Updates the positions from the velocities
+ </summary>
+</member>
+<member name="M:G_Sim.UpdatingMethods.JoinBodies">
+ <summary>
+ Finds all the bodies which are intersecting and performs a join on them
+ </summary>
+ <return>If the method joins any bodies then returns True, otherwise False</return>
+</member>
+<member name="M:G_Sim.UpdatingMethods.JoinTwoBodies(System.Int32,System.Int32)">
+ <summary>
+ Joins the bodies at the two specified indexes. Replaces the first body with the joined body and removes the second.
+ </summary>
+</member>
+<member name="M:G_Sim.UpdatingMethods.MixBodyColours(G_Sim.Body,G_Sim.Body)">
+ <summary>
+ Used by JoinBodies to calculate the new colour of two bodies propertional to their radius
+ </summary>
+</member>
+</members>
+</doc>
